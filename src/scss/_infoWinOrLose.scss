@@ -1,0 +1,28 @@
+.infoWindow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 30%;
+    border: 3px solid black;
+    background-color: rgb(63, 58, 58);
+    z-index: 4;
+
+    h2 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 4rem;
+    }
+
+    span {
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+    }
+}
