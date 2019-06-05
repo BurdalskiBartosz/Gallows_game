@@ -1,6 +1,11 @@
 import './scss/style.scss';
 import Gallows from './js/Gallows.js';
-
+window.addEventListener("load", function () {
+    if (screen.width <= 1050) {
+        alert("Spróbuj zagrać na urządzeniu o większej rozdzielczości")
+        location.reload(true);
+    }
+})
 Gallows.createAlphabet();
 const startGame = () => {
     const gallow = new Gallows();
